@@ -63,6 +63,9 @@ public static class ManipulaDados {
             return senha;
         }
         
+        public double getSaldo() {
+            return saldo;
+        }
     }
     
     public static void main(String[] args) {
@@ -79,13 +82,15 @@ public static class ManipulaDados {
         
         int escolha;
         int escolhaCase2;
-        int valorTransferencia;
-        int novoSaldo;
+        double valorTransferencia;
+        double novoSaldo = 1000;
+        double valorDeposito;
+        double valorSaque;
 
         do {
             System.out.println("\nOPÇÕES DE MOVIMENTAÇÃO: \n");
             System.out.println("1 - Mostrar saldo.                            2 - Transferir.");
-            System.out.println("3 - Sacar.                                    4 - Pagar conta com código de barras.");
+            System.out.println("3 - Sacar.                                    4 - Depositar.");
             System.out.println("5 - Sair.");
             System.out.print("\nDigite um número: \n");
 
@@ -106,18 +111,28 @@ public static class ManipulaDados {
                     
                     if (escolhaCase2 == 1 || escolhaCase2 == 2 || escolhaCase2 == 3) {
                         System.out.print("\nDigite uma quantia: ");
-                        valorTransferencia = scanner.nextInt();
-                        novoSaldo = 1000 - valorTransferencia; 
-                        System.out.println("\n                           Seu saldo atual é: " + novoSaldo + ",00$");
+                        valorTransferencia = scanner.nextDouble();
+                        novoSaldo = novoSaldo - valorTransferencia; 
+                        System.out.println("\n                         Seu saldo atual é: " + novoSaldo + "0$");
+                    } else {
+                        System.out.println("\nOpção inválida, tente novamente!");
                     };
                     break;
                 case 3:
                     System.out.println("\nVocê escolheu a Opção 3.");
-                    System.out.println("\n                         Sistema fora do ar, tente mais tarde.");
+                    System.out.print("\nDigite uma quantia: ");
+                    valorSaque = scanner.nextDouble();
+                    novoSaldo = novoSaldo - valorSaque;
+                    System.out.println("\n                         Trasnferência concluída com sucesso.");
+                    System.out.println("\n                           Seu saldo atual é: " + novoSaldo + "0$");
                     break;
                 case 4:
                     System.out.println("\nVocê escolheu a Opção 4.");
-                    System.out.println("\n                         Opção momentâneamente indisponível, tente mais tarde..");
+                    System.out.print("\nDigite uma quantia: ");
+                    valorDeposito = scanner.nextDouble();
+                    novoSaldo = novoSaldo + valorDeposito;
+                    System.out.println("\n                         Trasnferência concluída com sucesso.");
+                    System.out.println("\n                           Seu saldo atual é: " + novoSaldo + "0$");
                     break;
                 case 5:
                     System.out.println("\n                         FIM DO PROGRAMA!");
