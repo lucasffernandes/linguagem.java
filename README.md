@@ -12,7 +12,7 @@ programação java disponibiliza para o desenvolvimento de sistemas, ferramentas
 
 * Utilização de classes;
 * Instanciação de objetos;
-* Estruturas de decizão;
+* Estruturas de decisão;
 * Estruturas de repetição;
 * tratamento de variáveis;
 * visibilidade de atributos;
