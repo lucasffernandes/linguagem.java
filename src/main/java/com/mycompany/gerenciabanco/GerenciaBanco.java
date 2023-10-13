@@ -131,7 +131,7 @@ public static class ManipulaDados {
                     System.out.print("\nDigite uma quantia: ");
                     valorDeposito = scanner.nextDouble();
                     novoSaldo = novoSaldo + valorDeposito;
-                    System.out.println("\n                         Transsferência concluída com sucesso.");
+                    System.out.println("\n                         Transferência concluída com sucesso.");
                     System.out.println("\n                           Seu saldo atual é: " + novoSaldo + "0$");
                     break;
                 case 5:
