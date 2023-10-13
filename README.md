@@ -1,7 +1,7 @@
 # linguagem.java
 
 Projeto em Java requisitado no terceiro período do curso de Engenharia De Software.
-Este projeto consiste em uma aplicação gerencial de Banco, com procedimentos básicos
+Este projeto consiste em uma simulação gerencial de um Banco, com procedimentos básicos
 de informação ao usuário como: Nome, Sobrenome, CPF, Numero de Conta e Idade. 
 
 Além disso, a Aplicação também dispõe de métodos que trazem opções de navegação ao usuário, 
@@ -14,6 +14,6 @@ programação java disponibiliza para o desenvolvimento de sistemas, ferramentas
 * Instanciação de objetos;
 * Estruturas de decisão;
 * Estruturas de repetição;
-* tratamento de variáveis;
-* visibilidade de atributos;
-* identação de comandos;
+* Tratamento de variáveis;
+* Visibilidade de atributos;
+* Identação de comandos;
